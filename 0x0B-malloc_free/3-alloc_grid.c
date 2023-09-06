@@ -1,8 +1,7 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - eturns a pointer to a 2 dimensional 
- * 		array of integers
+ * alloc_grid - eturns a pointer to a 2 dimensional
  * @width: width of array
  * @height: height of array
  *
@@ -31,9 +30,9 @@ int **alloc_grid(int width, int height)
 			free(vect);
 			return (NULL);
 		}
-                for (j = 0; j < width; j++)
+		for (j = 0; j < width; j++)
 			vect[i][j] = 0;
 	}
-	return vect;
+	return (vect);
 }
 
